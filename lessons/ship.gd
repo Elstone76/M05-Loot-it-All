@@ -11,6 +11,7 @@ var gem_count := 0
 func _ready() -> void:
 	area_entered.connect(_on_area_entered)
 	set_health(health)
+	
 
 
 func _process(delta: float) -> void:
