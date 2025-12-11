@@ -1,11 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://bo6bck5vonkyh"]
+[gd_scene load_steps=5 format=3 uid="uid://bo6bck5vonkyh"]
 
-[ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/ball.tscn" id="1_lemsm"]
+[ext_resource type="Script" uid="uid://b436yhwvqwb50" path="res://practices/L2.P1.pop_the_ball/pop_the_ball.gd" id="1_aqphn"]
+[ext_resource type="PackedScene" uid="uid://00exfwbwdw71" path="res://practices/L2.P1.pop_the_ball/ball.tscn" id="1_lemsm"]
 [ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/needle.tscn" id="3_p1ses"]
 [ext_resource type="PackedScene" path="res://practices/L2.P1.pop_the_ball/background.tscn" id="5_8i2ot"]
 
 [node name="PopTheBall" type="Node2D"]
 position = Vector2(960, 540)
+script = ExtResource("1_aqphn")
 
 [node name="Ball" parent="." instance=ExtResource("1_lemsm")]
 position = Vector2(-136, 38)
